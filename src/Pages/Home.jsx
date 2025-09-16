@@ -14,8 +14,23 @@ const Home = () => {
 
   return (
     <div>
-      {/* ...other sections... */}
+      <section>
+        <HomeHero />
+      </section>
+      <section>
+        <HomeWho />
+      </section>
+      <section>
+        <HomeWork />
+      </section>
+      <section>
+        <ConstructionCards />
+      </section>
+      <section>
+        <HomeProject />
+      </section>
       
+     
       <section
         className="relative bg-cover bg-center bg-no-repeat h-[120vh] flex items-center justify-center text-center px-4"
         style={{
