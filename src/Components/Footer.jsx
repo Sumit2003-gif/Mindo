@@ -11,10 +11,9 @@ import {
 
 const quickLinks = [
   { name: 'Homepage', to: '/' },
-  { name: 'About Us', to: '/' },
-  { name: 'Our Services', to: '/' },
-  { name: 'Our Projects', to: '/' },
-  { name: 'Contact Us', to: '/' },
+  { name: 'About Us', to: '/About' },
+  { name: 'Blogs', to: '/blogs' },
+  { name: 'Contact Us', to: '/contact' },
 ];
 
 const Footer = () => {

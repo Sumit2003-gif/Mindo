@@ -30,19 +30,13 @@ const About = () => {
   return (
     <div>
       {/* Hero Section */}
-      <motion.section
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={fadeUp}
-      >
+      
         <HomeHero
           header="ABOUT US"
           text="Building Your Dreams,"
           texter1="Safely & Securely"
           paragraph="Our company delivers exceptional construction services backed by 25 years of experience."
         />
-      </motion.section>
 
       {/* Who We Are + Swiper Section */}
       <section
@@ -107,26 +101,13 @@ const About = () => {
       </section>
 
       {/* Our Vision */}
-      <motion.section
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={fadeUp}
-        className="max-w-7xl mx-auto px-6 md:px-12"
-      >
+    
         <OurVision />
-      </motion.section>
+      
 
       {/* Contractors Section */}
-      <motion.section
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={fadeUp}
-        className="max-w-7xl mx-auto px-6 md:px-12"
-      >
+      
         <ContractorsSection />
-      </motion.section>
 
       {/* Final Call to Action Section */}
       <motion.section
