@@ -42,7 +42,10 @@ const HomeHero = () => {
   }, []);
 
   return (
-    <div ref={ref} className="relative h-[100vh] sm:h-[110vh] overflow-hidden text-white">
+    <div 
+      ref={ref} 
+      className="relative min-h-screen py-5 pt-24 md:pt-32 overflow-hidden text-white flex items-center"
+    >
       {/* Background */}
       <motion.div
         key={currentBgImage}
@@ -57,7 +60,7 @@ const HomeHero = () => {
       <div className="absolute inset-0 bg-black/80" />
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col justify-center h-full px-6 md:px-16 max-w-7xl mx-auto text-center md:text-left">
+      <div className="relative z-10 w-full px-6 md:px-16 max-w-7xl mx-auto text-center md:text-left">
         {/* Animated Button */}
         <motion.button
           custom={0}

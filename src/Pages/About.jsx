@@ -10,6 +10,7 @@ import ContractorsSection from '../Components/ContractorSection';
 
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import PageHero from '../Components/HeroAllSection';
 
 const About = () => {
   const images = [
@@ -27,16 +28,20 @@ const About = () => {
     visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: 'easeOut' } },
   };
 
+    const breadcrumbs = [
+    { label: 'ABOUT', link: '/about' }
+  ];
+
   return (
     <div>
       {/* Hero Section */}
       
-        <HomeHero
-          header="ABOUT US"
-          text="Building Your Dreams,"
-          texter1="Safely & Securely"
-          paragraph="Our company delivers exceptional construction services backed by 25 years of experience."
-        />
+       <PageHero
+        title="Who We Are"
+      subtitle="Dedicated professionals building solutions that matter."
+      image="https://images.pexels.com/photos/267394/pexels-photo-267394.jpeg"
+      breadcrumbs={breadcrumbs}
+       />
 
       {/* Who We Are + Swiper Section */}
       <section

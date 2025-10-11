@@ -6,6 +6,7 @@ import Card from '../Components/Cads';
 import blogData from '../Components/blogdata';
 
 import { motion } from 'framer-motion';
+import PageHero from '../Components/HeroAllSection';
 
 const Blog = () => {
   const recentPosts = blogData.slice(0, 3); // Get first 3 for recent
@@ -16,23 +17,19 @@ const Blog = () => {
     visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } },
   };
 
+    const breadcrumbs = [
+    { label: 'Blog', link: '/blog' }
+  ];
+
   return (
     <div className="bg-[#fffdf4] text-gray-800 min-h-screen">
       {/* Hero Section */}
-      <motion.section
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={fadeUp}
-      >
-        <HomeHero
-          header="BLOGS"
-          text="Blog Content Can Elevate"
-          texter1="Construction Building"
-          paragraph="Our company delivers exceptional construction services backed by 25 years of experience."
-        />
-      </motion.section>
-
+      <PageHero
+       title="Insights & Ideas"
+      subtitle="Explore our thoughts, tips, and trends shaping the industry."
+      image="https://images.pexels.com/photos/176342/pexels-photo-176342.jpeg"
+      breadcrumbs={breadcrumbs}
+      />
       {/* Main Blog Layout */}
       <motion.div
         className="max-w-7xl mx-auto px-4 md:px-6 py-16 grid grid-cols-1 lg:grid-cols-4 gap-12"
